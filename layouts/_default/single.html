@@ -1,18 +1,22 @@
 {{ define "main" }}
-<div
-    style="max-width: 900px; margin: 0 auto; padding: 40px 20px; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">
-    <article>
-        <h1 style="font-size: 2.5em; margin-bottom: 0.3em; color: #2c3e50;">{{ .Title }}</h1>
-        <div style="color: #7f8c8d; margin-bottom: 2em; font-size: 0.9em;">
-            {{ .Date.Format "2006-01-02 15:04" }}
-        </div>
-        <div style="line-height: 1.8; color: #34495e;">
-            {{ .Content }}
-        </div>
+<div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+    <header style="text-align: center; margin-bottom: 3em;">
+        <a href="/posts/"
+            style="background: #e74c3c; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 1em;">📚
+            全記事一覧へ戻る</a>
+        <h1 style="font-size: 2.5em; color: #2c3e50; margin: 0;">{{ .Title }}</h1>
+        <p style="color: #7f8c8d; font-size: 1.1em;">{{ .Date.Format "2006-01-02" }}</p>
+    </header>
+
+    <article
+        style="background: white; border: 1px solid #ecf0f1; border-radius: 12px; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); line-height: 1.8;">
+        {{ .Content }}
     </article>
 
-    <div style="margin-top: 3em; padding-top: 2em; border-top: 1px solid #ecf0f1;">
-        <a href="/" style="color: #3498db; text-decoration: none;">← 記事一覧へ戻る</a>
+    <div style="text-align: center; margin-top: 3em;">
+        <a href="/posts/"
+            style="background: #3498db; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 1.1em;">📚
+            全記事一覧へ戻る</a>
     </div>
 </div>
 {{ end }}

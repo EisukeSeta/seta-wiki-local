@@ -1,3 +1,9 @@
+---
+title: "How to Build Wiki"
+date: 2025-12-29
+draft: false
+---
+
 # Windows Docker + Hugo Wiki + S3 + CloudFront 完全自動デプロイ構築ガイド
 
 ## 概要

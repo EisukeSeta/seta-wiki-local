@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+    <header style="text-align: center; margin-bottom: 3em;">
+        <a href="/"
+            style="background: #e74c3c; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 2em;">🏠
+            トップページ</a>
+        <h1 style="font-size: 2.5em; color: #2c3e50; margin: 0.5em 0 0 0;">📚 全記事一覧 ({{ len .Pages }}件)</h1>
+    </header>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+        {{ range .Pages.ByDate.Reverse }}
+        <div
+            style="background: white; border: 1px solid #ecf0f1; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <h3 style="margin: 0 0 0.5em 0; font-size: 1.3em;">
+                <a href="{{ .RelPermalink }}" style="color: #2c3e50; text-decoration: none;">{{ .Title }}</a>
+            </h3>
+            <p style="color: #7f8c8d; font-size: 0.9em; margin: 0;">{{ .Date.Format "2006-01-02" }}</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

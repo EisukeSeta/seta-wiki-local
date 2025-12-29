@@ -1,4 +1,8 @@
-baseURL = 'http://localhost:1313/'
+# localhostテスト用
+# baseURL = "/"
+# baseURL = 'http://127.0.0.1:1313/'
+# 公開前
+baseURL = 'https://wiki.seta.mydns.jp/'
 languageCode = 'ja-jp'
 title = 'Seta Wiki'
 disableFastRender = true
