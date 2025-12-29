@@ -1,8 +1,8 @@
-name: Deploy Hugo to S3
+name: Deploy Hugo to S3 + CloudFront
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:  # 手動実行用追加
+  workflow_dispatch:  # 手動実行用
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
         hugo-version: '0.153.0'  # ローカルと一致
         
     - name: Build Hugo site
-      run: hugo --minify --gc  # --gc追加でクリーン
+      run: hugo --minify --gc  # クリーン構築
       
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
@@ -27,3 +27,11 @@ jobs:
         
     - name: Deploy to S3
       run: aws s3 sync public/ s3://wiki.seta.mydns.jp/ --delete --cache-control max-age=3600
+      
+    - name: CloudFront Cache Invalidation  # 🚀 新規追加！
+      run: |
+        aws cloudfront create-invalidation \
+          --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+          --paths "/*"
+      env:
+        AWS_REGION: us-east-1
