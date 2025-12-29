@@ -1,0 +1,12 @@
+{
+    "files.watcherExclude": {
+        "**/public/**": true,
+        "**/resources/**": true,
+        "**/themes/**": true
+    },
+    "files.exclude": {
+        "**/public": true,
+        "**/resources": true
+    },
+    "editor.formatOnSave": true
+}

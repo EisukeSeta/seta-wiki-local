@@ -1,0 +1,11 @@
+services:
+  hugo:
+    image: klakegg/hugo:ext-ubuntu
+    entrypoint: ["/bin/sh", "-c", "while true; do sleep 30; done"]
+    volumes:
+      - .:/workspace
+    ports:
+      - "1313:1313"          # ★この行を追加！
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
