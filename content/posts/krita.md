@@ -13,7 +13,7 @@ draft: false
 - ローカル ComfyUI / nunchaku サーバー: Krita 同梱の「ローカル標準サーバー」を推奨  
 
 ### 1. モデルファイルの準備と配置
-```
+```markdown
 必須ファイル（nunchaku 版、safetensors）:
 ├── diffusion_models/
 │   ├── svdq-fp4_r32-qwen-image.safetensors          (通常生成用)
@@ -24,12 +24,16 @@ draft: false
     └── qwen_image_vae.safetensors
 ```
 
-- **ダウンロード元**: Hugging Face `nunchaku-tech/` / `Comfy-Org/Qwen-Image_ComfyUI`  
-- **配置パス例** (Windows):  
-  `C:\Users\[ユーザー名]\AppData\Roaming\krita-ai-diffusion\comfyui-nunchaku\models\...`
-
-### 2. Krita-ai-diffusion 設定（安定動作構成）
+- **ダウンロード元**: 
+```markdown
+Hugging Face `nunchaku-tech/` / `Comfy-Org/Qwen-Image_ComfyUI`  
 ```
+- **配置パス例** (Windows):  
+```markdown
+  `C:\Users\[ユーザー名]\AppData\Roaming\krita-ai-diffusion\comfyui-nunchaku\models\...`
+```
+### 2. Krita-ai-diffusion 設定（安定動作構成）
+```markdown
 推奨プリセット構成:
 ディフュージョン構成: Qwen (svdq-fp4_r32-qwen-image.safetensors)
 リンクされた編集スタイル: Qwen Edit (svdq-fp4_r32-qwen-image-edit-2509.safetensors)

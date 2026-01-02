@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seta Wiki</title><link>/</link><description>Recent content on Seta Wiki</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Fri, 02 Jan 2026 01:13:22 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Krita に Qwen-Edit-Plus-2509 をインストールする暫定方法（2026/01）</title><link>/posts/krita/</link><pubDate>Fri, 02 Jan 2026 01:13:22 +0000</pubDate><guid>/posts/krita/</guid><description>&lt;h2 id="krita-に-qwen-edit-plus-2509-をインストールする暫定方法202601"&gt;Krita に Qwen-Edit-Plus-2509 をインストールする暫定方法（2026/01）&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seta Wiki</title><link>https://wiki.seta.mydns.jp/</link><description>Recent content on Seta Wiki</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Fri, 02 Jan 2026 15:00:00 +0900</lastBuildDate><atom:link href="https://wiki.seta.mydns.jp/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome</title><link>https://wiki.seta.mydns.jp/posts/welcome/</link><pubDate>Fri, 02 Jan 2026 15:00:00 +0900</pubDate><guid>https://wiki.seta.mydns.jp/posts/welcome/</guid><description>&lt;h1 id="最初の記事"&gt;最初の記事&lt;/h1&gt;
+&lt;h1 id="-hugo-wiki-markdown記法"&gt;🚀 Hugo Wiki Markdown記法&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Hugo v0.111.3 + Goldmark&lt;/strong&gt;対応。&lt;strong&gt;table shortcode不要&lt;/strong&gt;・&lt;strong&gt;標準記法のみ&lt;/strong&gt;で完璧動作。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;title: &amp;#34;🚀 Hugo Wiki Markdown完全ガイド&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;date: 2026-01-02
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draft: false
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Hugo Wiki Markdown記法（Goldmark拡張）
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**Hugo v0.111.3対応・table shortcode不要**&lt;/span&gt;。**コピペ即使用可**。
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## 📋 基本記法
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| 記法 | 表記 | 例 | 結果 | Wiki用途 |
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|---|---|---|---|---|
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="font-weight:bold"&gt;**見出し**&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`# H1`&lt;/span&gt;〜&lt;span style="color:#e6db74"&gt;`###### H6`&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`## 見出し2`&lt;/span&gt; | ## 見出し2 | 章立て |
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="font-weight:bold"&gt;**太字**&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`**bold**`&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`**重要**`&lt;/span&gt; | &lt;span style="font-weight:bold"&gt;**重要**&lt;/span&gt; | 強調 |
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="font-weight:bold"&gt;**斜体**&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`*italic*`&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`*補足*`&lt;/span&gt; | &lt;span style="font-style:italic"&gt;*補足*&lt;/span&gt; | 解説 |
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="font-weight:bold"&gt;**打ち消し**&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`~~del~~`&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`~~削除~~`&lt;/span&gt; | &lt;span style="color:#f92672"&gt;~~削除~~&lt;/span&gt; | 差分 |
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="font-weight:bold"&gt;**インラインコード**&lt;/span&gt; | `&lt;span style="color:#e6db74"&gt;` `&lt;/span&gt;code&lt;span style="color:#e6db74"&gt;` `` | `` `&lt;/span&gt;hugo server&lt;span style="color:#e6db74"&gt;` `` | `&lt;/span&gt;hugo server&lt;span style="color:#e6db74"&gt;` | コマンド |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| **キーボード** | `&lt;/span&gt;&amp;lt;kbd&amp;gt;Ctrl+C&amp;lt;/kbd&amp;gt;&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;&amp;lt;kbd&amp;gt;Ctrl+C&amp;lt;/kbd&amp;gt;&lt;span style="color:#e6db74"&gt;` | &amp;lt;kbd&amp;gt;Ctrl+C&amp;lt;/kbd&amp;gt; | 操作 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;## ✨ Hugo拡張記法
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 記法 | 表記 | 例 | 結果 | 用途 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;|---|---|---|---|---|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| **タスクリスト** | `&lt;/span&gt;- [ ] / - [x]&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;- [ ] TODO&lt;span style="color:#e6db74"&gt;`&amp;lt;br&amp;gt;`&lt;/span&gt;- [x] 完了&lt;span style="color:#e6db74"&gt;` | - [ ] TODO&amp;lt;br&amp;gt;- [x] 完了 | チェックリスト |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| **脚注** | `&lt;/span&gt;[^1]&lt;span style="color:#e6db74"&gt;`&amp;lt;br&amp;gt;`&lt;/span&gt;[^1]:注釈&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;Hugo[^1]&lt;span style="color:#e6db74"&gt;` | Hugo[^1] | 詳細説明 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| **定義リスト** | `&lt;/span&gt;用語&lt;span style="color:#e6db74"&gt;`&amp;lt;br&amp;gt;`&lt;/span&gt;: 説明&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;Hugo&lt;span style="color:#e6db74"&gt;`&amp;lt;br&amp;gt;`&lt;/span&gt;: SSG&lt;span style="color:#e6db74"&gt;` | &amp;lt;dl&amp;gt;&amp;lt;dt&amp;gt;Hugo&amp;lt;/dt&amp;gt;&amp;lt;dd&amp;gt;SSG&amp;lt;/dd&amp;gt;&amp;lt;/dl&amp;gt; | 用語集 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| **詳細開閉** | `&lt;/span&gt;&amp;lt;details&amp;gt;&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;&amp;lt;details&amp;gt;&amp;lt;summary&amp;gt;詳細&amp;lt;/summary&amp;gt;内容&amp;lt;/details&amp;gt;&lt;span style="color:#e6db74"&gt;` | &amp;lt;details&amp;gt;&amp;lt;summary&amp;gt;詳細&amp;lt;/summary&amp;gt;内容&amp;lt;/details&amp;gt; | FAQ |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;## 📊 **Markdownテーブル**（shortcode不要）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;`&lt;/span&gt;`&lt;span style="color:#e6db74"&gt;`markdown&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 設定 | 値 | 説明 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;|---|---|---|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| `&lt;/span&gt;baseURL&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;/&lt;span style="color:#e6db74"&gt;` | ローカル開発 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| `&lt;/span&gt;draft&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;false&lt;span style="color:#e6db74"&gt;` | 公開必須 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| `&lt;/span&gt;ports&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;1313:1313&lt;span style="color:#e6db74"&gt;` | localhost |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;`&lt;/span&gt;`&lt;span style="color:#e6db74"&gt;`&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;## 💻 ブロック要素
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;`&lt;/span&gt;`&lt;span style="color:#e6db74"&gt;`markdown&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;### コードブロック
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;`&lt;/span&gt;`&lt;span style="color:#e6db74"&gt;`powershell&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;docker compose up -d
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;docker compose exec hugo hugo new posts/記事.md
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;git push # 5分公開
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;`&lt;/span&gt;`&lt;span style="color:#e6db74"&gt;`&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;### 引用
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;gt; Hugoは最速の静的サイトジェネレータ
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;## 🎯 **記事Frontmatter必須**
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;`&lt;/span&gt;`&lt;span style="color:#e6db74"&gt;`markdown&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;***
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;title: &amp;#34;記事タイトル&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;date: 2026-01-02
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;draft: false # 公開！
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;***
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;# 記事タイトル
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;本文...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;`&lt;/span&gt;`&lt;span style="color:#e6db74"&gt;`&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;## ⚙️ **運用コマンド表**
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 手順 | コマンド | 結果 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;|---|---|---|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 1 | `&lt;/span&gt;docker compose up -d&lt;span style="color:#e6db74"&gt;` | コンテナ起動 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 2 | `&lt;/span&gt;hugo new posts/記事.md&lt;span style="color:#e6db74"&gt;` | 新規記事 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 3 | **Ctrl+S** → **F5** | 即反映（2秒） |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 4 | **Ctrl+C** → **Enter** | 確実再起動（3秒） |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 5 | `&lt;/span&gt;git push&lt;span style="color:#e6db74"&gt;` | 5分自動公開 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;## 🚨 **必須注意点**
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 注意 | 対処 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;|---|---|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| `&lt;/span&gt;draft: true&lt;span style="color:#e6db74"&gt;` | `&lt;/span&gt;draft: false&lt;span style="color:#e6db74"&gt;`に変更 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| `&lt;/span&gt;localhost&lt;span style="color:#e6db74"&gt;`繋がらない | `&lt;/span&gt;127.0.0.1:1313&lt;span style="color:#e6db74"&gt;`使用 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 即反映なし | F5 / 3秒再起動 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| table壊れ | **パイプ記法のみ**使用 |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;| 画像| `&lt;/span&gt;![&lt;span style="color:#f92672"&gt;alt&lt;/span&gt;](&lt;span style="color:#a6e22e"&gt;image.jpg&lt;/span&gt;)`（static/配置）|
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**参考**&lt;/span&gt;: [&lt;span style="color:#f92672"&gt;Hugo公式&lt;/span&gt;](&lt;span style="color:#a6e22e"&gt;https://gohugo.io/content-management/markdown/&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**これでSeta Wiki完全Markdown運用**&lt;/span&gt;！**コピペ→Ctrl+S→F5**で即プレビュー🚀、**127.0.0.1:1313**で確認！
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;結果&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Krita に Qwen-Edit-Plus-2509 をインストールする暫定方法（2026/01）</title><link>https://wiki.seta.mydns.jp/posts/krita/</link><pubDate>Fri, 02 Jan 2026 01:13:22 +0000</pubDate><guid>https://wiki.seta.mydns.jp/posts/krita/</guid><description>&lt;h2 id="krita-に-qwen-edit-plus-2509-をインストールする暫定方法202601"&gt;Krita に Qwen-Edit-Plus-2509 をインストールする暫定方法（2026/01）&lt;/h2&gt;
 &lt;h3 id="前提条件"&gt;前提条件&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Krita&lt;/strong&gt;: 5.2.14 以上&lt;/li&gt;
@@ -7,24 +95,27 @@
 &lt;li&gt;ローカル ComfyUI / nunchaku サーバー: Krita 同梱の「ローカル標準サーバー」を推奨&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="1-モデルファイルの準備と配置"&gt;1. モデルファイルの準備と配置&lt;/h3&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;必須ファイル（nunchaku 版、safetensors）:
-├── diffusion_models/
-│ ├── svdq-fp4_r32-qwen-image.safetensors (通常生成用)
-│ └── svdq-fp4_r32-qwen-image-edit-2509.safetensors (編集用)
-├── text_encoders/qwen-image/
-│ └── qwen_2.5_vl_7b_fp8_scaled.safetensors
-└── vae/qwen-image/
- └── qwen_image_vae.safetensors
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;ダウンロード元&lt;/strong&gt;: Hugging Face &lt;code&gt;nunchaku-tech/&lt;/code&gt; / &lt;code&gt;Comfy-Org/Qwen-Image_ComfyUI&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;配置パス例&lt;/strong&gt; (Windows):&lt;br&gt;
-&lt;code&gt;C:\Users\[ユーザー名]\AppData\Roaming\krita-ai-diffusion\comfyui-nunchaku\models\...&lt;/code&gt;&lt;/li&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;必須ファイル（nunchaku 版、safetensors）:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;├── diffusion_models/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ ├── svdq-fp4_r32-qwen-image.safetensors (通常生成用)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ └── svdq-fp4_r32-qwen-image-edit-2509.safetensors (編集用)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;├── text_encoders/qwen-image/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ └── qwen_2.5_vl_7b_fp8_scaled.safetensors
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└── vae/qwen-image/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; └── qwen_image_vae.safetensors
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ダウンロード元&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="2-krita-ai-diffusion-設定安定動作構成"&gt;2. Krita-ai-diffusion 設定（安定動作構成）&lt;/h3&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;推奨プリセット構成:
-ディフュージョン構成: Qwen (svdq-fp4_r32-qwen-image.safetensors)
-リンクされた編集スタイル: Qwen Edit (svdq-fp4_r32-qwen-image-edit-2509.safetensors)
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Hugging Face &lt;span style="color:#e6db74"&gt;`nunchaku-tech/`&lt;/span&gt; / &lt;span style="color:#e6db74"&gt;`Comfy-Org/Qwen-Image_ComfyUI`&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;配置パス例&lt;/strong&gt; (Windows):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;`C:\Users\[ユーザー名]\AppData\Roaming\krita-ai-diffusion\comfyui-nunchaku\models\...`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="2-krita-ai-diffusion-設定安定動作構成"&gt;2. Krita-ai-diffusion 設定（安定動作構成）&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;推奨プリセット構成:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ディフュージョン構成: Qwen (svdq-fp4_r32-qwen-image.safetensors)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;リンクされた編集スタイル: Qwen Edit (svdq-fp4_r32-qwen-image-edit-2509.safetensors)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;なぜこの構成?&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;「ディフュージョン構成: Qwen Edit」単体は &lt;code&gt;list object has no attribute 'dtype'&lt;/code&gt; エラー発生&lt;/li&gt;
@@ -73,7 +164,7 @@
 &lt;li&gt;&lt;strong&gt;外部 ComfyUI 併用&lt;/strong&gt;: Plus/Multi-Image 編集が必要なら、Krita 生成 → 外部編集 → Krita 仕上げ&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;将来性&lt;/strong&gt;: バージョンアップで単体「Qwen Edit」も安定化予定（現時点回避必須）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;最終確認&lt;/strong&gt;: 生成（Qwen）→ 編集（Qwen Edit）で一連動作確認後運用開始。&lt;/p&gt;</description></item><item><title>AIツール集</title><link>/posts/ai-tools/</link><pubDate>Mon, 29 Dec 2025 15:20:00 +0900</pubDate><guid>/posts/ai-tools/</guid><description>&lt;h1 id="aiツールwiki"&gt;AIツールWiki&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;最終確認&lt;/strong&gt;: 生成（Qwen）→ 編集（Qwen Edit）で一連動作確認後運用開始。&lt;/p&gt;</description></item><item><title>AIツール集</title><link>https://wiki.seta.mydns.jp/posts/ai-tools/</link><pubDate>Mon, 29 Dec 2025 15:20:00 +0900</pubDate><guid>https://wiki.seta.mydns.jp/posts/ai-tools/</guid><description>&lt;h1 id="aiツールwiki"&gt;AIツールWiki&lt;/h1&gt;
 &lt;p&gt;ComfyUI, Stable Diffusion&amp;hellip;&lt;/p&gt;
 &lt;h2 id="即時反映テスト"&gt;即時反映テスト&lt;/h2&gt;
 &lt;ul&gt;
@@ -84,92 +175,8 @@
 &lt;li&gt;✅ Docker + Hugo完璧&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;🔥 LIVE TEST (3:58) - 今見えますか？&lt;/strong&gt;
-追記分は？&lt;/p&gt;</description></item><item><title>次の記事</title><link>/posts/next/</link><pubDate>Mon, 29 Dec 2025 15:10:00 +0900</pubDate><guid>/posts/next/</guid><description>&lt;h1 id="新規wikiページ"&gt;新規Wikiページ&lt;/h1&gt;
-&lt;p&gt;リアルタイム反映確認！&lt;/p&gt;</description></item><item><title>Welcome</title><link>/posts/welcome/</link><pubDate>Mon, 29 Dec 2025 15:00:00 +0900</pubDate><guid>/posts/welcome/</guid><description>&lt;h1 id="最初の記事"&gt;最初の記事&lt;/h1&gt;
-&lt;p&gt;Wiki動作確認！&lt;/p&gt;
-&lt;h1 id="-hugo-wiki-markdown記法"&gt;🚀 Hugo Wiki Markdown記法&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Hugo v0.111.3 + Goldmark&lt;/strong&gt;対応。&lt;strong&gt;table shortcode不要&lt;/strong&gt;・&lt;strong&gt;標準記法のみ&lt;/strong&gt;で完璧動作。&lt;/p&gt;
-&lt;h2 id="基本記法"&gt;基本記法&lt;/h2&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;記法&lt;/th&gt;
- &lt;th&gt;例&lt;/th&gt;
- &lt;th&gt;結果&lt;/th&gt;
- &lt;th&gt;Wiki用途&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;strong&gt;見出し&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;## 見出し2&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;## 見出し2&lt;/td&gt;
- &lt;td&gt;章立て&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;strong&gt;太字&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;**重要**&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;&lt;strong&gt;重要&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;強調&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;strong&gt;斜体&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;*補足*&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;&lt;em&gt;補足&lt;/em&gt;&lt;/td&gt;
- &lt;td&gt;解説&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;strong&gt;コード&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;`hugo server`&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;hugo server&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;コマンド&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;strong&gt;リンク&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;[Google](https://google.com)&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://google.com"&gt;Google&lt;/a&gt;&lt;/td&gt;
- &lt;td&gt;外部参照&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="hugo拡張記法"&gt;Hugo拡張記法&lt;/h2&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;記法&lt;/th&gt;
- &lt;th&gt;例&lt;/th&gt;
- &lt;th&gt;結果&lt;/th&gt;
- &lt;th&gt;用途&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;strong&gt;タスクリスト&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;- [x] 完了&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;code&gt;- [ ] TODO&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;- [x] 完了&lt;!-- raw HTML omitted --&gt;- [ ] TODO&lt;/td&gt;
- &lt;td&gt;チェックリスト&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;strong&gt;脚注&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;Hugo[^1]&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;code&gt;[^1]: 注釈&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;Hugo&lt;/td&gt;
- &lt;td&gt;詳細説明&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;strong&gt;詳細開閉&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;code&gt;&amp;lt;details&amp;gt;&amp;lt;summary&amp;gt;詳細&amp;lt;/summary&amp;gt;内容&amp;lt;/details&amp;gt;&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;詳細&lt;!-- raw HTML omitted --&gt;内容&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
- &lt;td&gt;FAQ&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="wiki必須markdownテーブルshortcode不要"&gt;&lt;strong&gt;Wiki必須：Markdownテーブル&lt;/strong&gt;（shortcode不要）&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| 設定 | 値 | 説明 |
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|---|---|---|
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#e6db74"&gt;`baseURL`&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`/`&lt;/span&gt; | ローカル |
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#e6db74"&gt;`draft`&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`false`&lt;/span&gt; | 公開必須 |
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#e6db74"&gt;`ports`&lt;/span&gt; | &lt;span style="color:#e6db74"&gt;`1313:1313`&lt;/span&gt; | localhost |
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;結果&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Windows Docker + Hugo Wiki + S3 + CloudFront 完全自動デプロイ構築ガイド</title><link>/posts/how-to-build-wiki/</link><pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate><guid>/posts/how-to-build-wiki/</guid><description>&lt;h1 id="windows-docker--hugo-wiki--s3--cloudfront-完全自動デプロイ構築ガイド"&gt;Windows Docker + Hugo Wiki + S3 + CloudFront 完全自動デプロイ構築ガイド&lt;/h1&gt;
+追記分は？&lt;/p&gt;</description></item><item><title>次の記事</title><link>https://wiki.seta.mydns.jp/posts/next/</link><pubDate>Mon, 29 Dec 2025 15:10:00 +0900</pubDate><guid>https://wiki.seta.mydns.jp/posts/next/</guid><description>&lt;h1 id="新規wikiページ"&gt;新規Wikiページ&lt;/h1&gt;
+&lt;p&gt;リアルタイム反映確認！&lt;/p&gt;</description></item><item><title>Windows Docker + Hugo Wiki + S3 + CloudFront 完全自動デプロイ構築ガイド</title><link>https://wiki.seta.mydns.jp/posts/how-to-build-wiki/</link><pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate><guid>https://wiki.seta.mydns.jp/posts/how-to-build-wiki/</guid><description>&lt;h1 id="windows-docker--hugo-wiki--s3--cloudfront-完全自動デプロイ構築ガイド"&gt;Windows Docker + Hugo Wiki + S3 + CloudFront 完全自動デプロイ構築ガイド&lt;/h1&gt;
 &lt;h2 id="概要"&gt;概要&lt;/h2&gt;
 &lt;p&gt;Windows環境でDocker + Hugo Wikiを構築し、GitHub ActionsでAWS S3静的ウェブサイトに自動デプロイ、CloudFront + ACMでHTTPS公開する完全自動化手順です。&lt;/p&gt;
 &lt;h2 id="前提条件"&gt;前提条件&lt;/h2&gt;

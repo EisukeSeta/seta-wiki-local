@@ -1,4 +1,105 @@
 {{ define "main" }}
+<style>
+    /* 美麗テーブル（既存） */
+    table {
+        border-collapse: collapse;
+        margin: 1.5em 0;
+        width: 100%;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+        border: 2px solid #e1e5e9 !important;
+        padding: 12px 16px;
+        text-align: left;
+    }
+
+    th {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+        background: #f8f9fa;
+    }
+
+    tr:hover {
+        background: #e3f2fd !important;
+        transform: scale(1.01);
+        transition: all 0.2s ease;
+    }
+
+    /* ✨ 新規：美麗引用ブロック */
+    blockquote {
+        position: relative;
+        margin: 2em 0;
+        padding: 2rem 2.5rem 2rem 3rem;
+        background: linear-gradient(135deg, #f8f9ff 0%, #e8f4fd 100%);
+        border-left: 6px solid #3498db;
+        border-radius: 0 12px 12px 0;
+        box-shadow: 0 8px 32px rgba(52, 152, 219, 0.15);
+        font-size: 1.1em;
+        line-height: 1.7;
+        color: #2c3e50;
+        position: relative;
+        overflow: hidden;
+    }
+
+    blockquote::before {
+        content: '💡';
+        position: absolute;
+        left: -0.8rem;
+        top: 1.2rem;
+        font-size: 2em;
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 2;
+    }
+
+    blockquote::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(to bottom, #3498db, #2980b9);
+        border-radius: 0 3px 3px 0;
+    }
+
+    blockquote p {
+        margin: 0;
+        font-style: italic;
+    }
+
+    blockquote p:last-child {
+        margin-bottom: 0;
+    }
+
+    blockquote cite {
+        display: block;
+        margin-top: 1em;
+        font-size: 0.95em;
+        color: #7f8c8d;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    blockquote cite::before {
+        content: "— ";
+        color: #3498db;
+        font-weight: bold;
+    }
+</style>
+
 <div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
     <header style="text-align: center; margin-bottom: 3em;">
         <h1 style="font-size: 3em; color: #2c3e50; margin: 0;">📚 Seta Wiki</h1>
