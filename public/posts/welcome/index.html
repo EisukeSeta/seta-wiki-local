@@ -1,49 +1,27 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Welcome | Seta Wiki</title><style>*{margin:0;padding:0;box-sizing:border-box}body{background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);min-height:100vh}</style></head><body><style>table{border-collapse:collapse;margin:1.5em 0;width:100%;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.1)}th,td{border:2px solid #e1e5e9!important;padding:12px 16px;text-align:left}th{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;font-weight:600;text-transform:uppercase;letter-spacing:.5px}tr:nth-child(even){background:#f8f9fa}tr:hover{background:#e3f2fd!important;transform:scale(1.01);transition:all .2s ease}</style><div style="max-width:900px;margin:0 auto;padding:40px 20px"><header style=text-align:center;margin-bottom:3em><a href=/posts/ style="background:#e74c3c;color:#fff;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:700;display:inline-block;margin-bottom:1em">📚
+全記事一覧へ戻る</a><h1 style=font-size:2.5em;color:#2c3e50;margin:0>Welcome</h1><p style=color:#7f8c8d;font-size:1.1em>2025-12-29</p></header><article style="background:#fff;border:1px solid #ecf0f1;border-radius:12px;padding:40px;box-shadow:0 4px 12px rgba(0,0,0,5%);line-height:1.8"><h1 id=最初の記事>最初の記事</h1><p>Wiki動作確認！</p><h1 id=-hugo-wiki-markdown記法>🚀 Hugo Wiki Markdown記法</h1><p><strong>Hugo v0.111.3 + Goldmark</strong>対応。<strong>table shortcode不要</strong>・<strong>標準記法のみ</strong>で完璧動作。</p><h2 id=基本記法>基本記法</h2><table><thead><tr><th>記法</th><th>例</th><th>結果</th><th>Wiki用途</th></tr></thead><tbody><tr><td><strong>見出し</strong></td><td><code>## 見出し2</code></td><td>## 見出し2</td><td>章立て</td></tr><tr><td><strong>太字</strong></td><td><code>**重要**</code></td><td><strong>重要</strong></td><td>強調</td></tr><tr><td><strong>斜体</strong></td><td><code>*補足*</code></td><td><em>補足</em></td><td>解説</td></tr><tr><td><strong>コード</strong></td><td><code>`hugo server`</code></td><td><code>hugo server</code></td><td>コマンド</td></tr><tr><td><strong>リンク</strong></td><td><code>[Google](https://google.com)</code></td><td><a href=https://google.com>Google</a></td><td>外部参照</td></tr></tbody></table><h2 id=hugo拡張記法>Hugo拡張記法</h2><table><thead><tr><th>記法</th><th>例</th><th>結果</th><th>用途</th></tr></thead><tbody><tr><td><strong>タスクリスト</strong></td><td><code>- [x] 完了</code><code>- [ ] TODO</code></td><td>- [x] 完了- [ ] TODO</td><td>チェックリスト</td></tr><tr><td><strong>脚注</strong></td><td><code>Hugo[^1]</code><code>[^1]: 注釈</code></td><td>Hugo</td><td>詳細説明</td></tr><tr><td><strong>詳細開閉</strong></td><td><code>&lt;details>&lt;summary>詳細&lt;/summary>内容&lt;/details></code></td><td>詳細内容</td><td>FAQ</td></tr></tbody></table><h2 id=wiki必須markdownテーブルshortcode不要><strong>Wiki必須：Markdownテーブル</strong>（shortcode不要）</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span>| 設定 | 値 | 説明 |
+</span></span><span style=display:flex><span>|---|---|---|
+</span></span><span style=display:flex><span>| <span style=color:#e6db74>`baseURL`</span> | <span style=color:#e6db74>`/`</span> | ローカル |
+</span></span><span style=display:flex><span>| <span style=color:#e6db74>`draft`</span> | <span style=color:#e6db74>`false`</span> | 公開必須 |
+</span></span><span style=display:flex><span>| <span style=color:#e6db74>`ports`</span> | <span style=color:#e6db74>`1313:1313`</span> | localhost |
+</span></span></code></pre></div><p><strong>結果</strong>:</p><table><thead><tr><th>設定</th><th>値</th><th>説明</th></tr></thead><tbody><tr><td><code>baseURL</code></td><td><code>/</code></td><td>ローカル</td></tr><tr><td><code>draft</code></td><td><code>false</code></td><td>公開必須</td></tr><tr><td><code>ports</code></td><td><code>1313:1313</code></td><td>localhost</td></tr></tbody></table><h2 id=ブロック要素>ブロック要素</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#75715e>### コードブロック（PowerShell）
+</span></span></span><span style=display:flex><span>```powershell
+</span></span><span style=display:flex><span>docker compose up -d
+</span></span><span style=display:flex><span>docker compose exec hugo hugo new posts/記事.md
+</span></span></code></pre></div><h3 id=引用>引用</h3><blockquote><p>Hugoは最速の静的ジェネレータ</p></blockquote><pre tabindex=0><code>
+## **記事Frontmatter必須**
+```markdown
+---
+title: &#34;記事タイトル&#34;
+date: 2026-01-02
+draft: false  # 公開！
+---
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome | Seta Wiki</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-        }
-    </style>
-</head>
-
-<body>
-    
-<div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
-    <header style="text-align: center; margin-bottom: 3em;">
-        <a href="/posts/"
-            style="background: #e74c3c; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 1em;">📚
-            全記事一覧へ戻る</a>
-        <h1 style="font-size: 2.5em; color: #2c3e50; margin: 0;">Welcome</h1>
-        <p style="color: #7f8c8d; font-size: 1.1em;">2025-12-29</p>
-    </header>
-
-    <article
-        style="background: white; border: 1px solid #ecf0f1; border-radius: 12px; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); line-height: 1.8;">
-        <h1 id="最初の記事">最初の記事</h1>
-<p>Wiki動作確認！</p>
-
-    </article>
-
-    <div style="text-align: center; margin-top: 3em;">
-        <a href="/posts/"
-            style="background: #3498db; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 1.1em;">📚
-            全記事一覧へ戻る</a>
-    </div>
-</div>
-
-</body>
-
-</html>
+# 記事タイトル
+（本文）
+</code></pre><h2 id=hugo-wiki運用tips><strong>hugo Wiki運用Tips</strong></h2><pre tabindex=0><code>1. **Ctrl+S** → **F5**（2秒反映）
+2. **Ctrl+C → Enter**（3秒確実再起動）
+3. `http://127.0.0.1:1313/`（localhost安定）
+4. `git push` → 5分自動公開
+</code></pre><h2 id=-注意>⚠️ <strong>注意</strong></h2><ul><li><code>draft: false</code>忘れ → 非表示</li><li>tableは<strong>パイプ記法のみ</strong>（shortcode不要）</li><li>画像: <code>![alt](image.jpg)</code>（static/配置）</li></ul><p><strong>今すぐコピペで完璧Wiki記事作成</strong>！<code>http://127.0.0.1:1313/</code>で即プレビュー🚀</p></article><div style=text-align:center;margin-top:3em><a href=/posts/ style="background:#3498db;color:#fff;padding:15px 30px;border-radius:25px;text-decoration:none;font-weight:700;font-size:1.1em">📚
+全記事一覧へ戻る</a></div></div></body></html>
