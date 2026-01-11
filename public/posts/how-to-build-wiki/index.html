@@ -83,8 +83,9 @@ SSL証明書: *.example.com (ACM)
 </code></pre><h3 id=53-mydnsjp設定>5.3 mydns.jp設定</h3><pre tabindex=0><code>wiki.example.com → d123456789.cloudfront.net
 </code></pre><h2 id=6-運用フロー>6. 運用フロー</h2><pre tabindex=0><code>1. content/編集
 2. hugo --minify （任意）
-3. git add . &amp;&amp; git commit -m &#34;Update&#34; &amp;&amp; git push
-4. 5分後: https://wiki.example.com/即時反映
+3. ローカルホストで動作確認：　docker compose exec hugo hugo server -D --bind 0.0.0.0 --disableFastRender
+4. git add . &amp;&amp; git commit -m &#34;Update&#34; &amp;&amp; git push
+5. 5分後: https://wiki.example.com/即時反映
 </code></pre><h2 id=7-トラブルシューティング>7. トラブルシューティング</h2><table><thead><tr><th>問題</th><th>解決策</th></tr></thead><tbody><tr><td>404 NoSuchKey</td><td><code>hugo --minify</code> → <code>public/</code>確認 → Actions再実行</td></tr><tr><td>403 Forbidden</td><td>S3バケットポリシー確認、CloudFrontオリジンWebsite Endpoint使用</td></tr><tr><td>CNAMEエラー</td><td>mydns.jp CNAME → CloudFrontドメイン確認</td></tr><tr><td>HTTPS証明書</td><td>ACM us-east-1、DNS検証TXT2つ</td></tr></tbody></table><h2 id=8-コスト最適化>8. コスト最適化</h2><pre tabindex=0><code>S3: $0.023/GB（静的ファイル）
 CloudFront: Flat-rate Free ($0/month, 1Mリクエスト/100GB無料)
 ACM: 無料（自動更新）

@@ -167,8 +167,9 @@ wiki.example.com → d123456789.cloudfront.net
 ```
 1. content/編集
 2. hugo --minify （任意）
-3. git add . && git commit -m "Update" && git push
-4. 5分後: https://wiki.example.com/即時反映
+3. ローカルホストで動作確認：　docker compose exec hugo hugo server -D --bind 0.0.0.0 --disableFastRender
+4. git add . && git commit -m "Update" && git push
+5. 5分後: https://wiki.example.com/即時反映
 ```
 
 ## 7. トラブルシューティング
@@ -190,7 +191,7 @@ ACM: 無料（自動更新）
 
 **これでDocker + Hugo + GitHub Actions + S3 + CloudFront + HTTPSの完全自動デプロイWikiが構築完了！** 🚀
 
-## 🚀 運用フロー
+## 🚀 公開フロー
 
 1. `docker compose exec hugo hugo new posts/新記事.md`
 2. `draft: false` に変更
